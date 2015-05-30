@@ -41,7 +41,7 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-
+eclipse
 # Windows Installer files
 *.cab
 *.msi
@@ -50,3 +50,16 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+/*.gradle
+/*.settings
+LICENSE-fml.txt
+*.project
+MinecraftForge-License.txt
+MinecraftForge-Credits.txt
+CREDITS-fml.txt
+forge-1.7.10-10.13.3.1395-1710ls-changelog.txt
+/gradle
+gradlew.bat
+/*.classpath
+gradlew
