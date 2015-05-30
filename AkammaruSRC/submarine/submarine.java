@@ -1,8 +1,12 @@
 package submarine;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.registry.GameRegistry;
+
+
 
 @Mod(modid=submarine.MODID, name=submarine.MODNAME, version=submarine.MODVER) //Tell forge "Oh hey, there's a new mod here to load."
 public class submarine {
@@ -17,16 +21,25 @@ public class submarine {
     public static submarine instance;
            
     public static Item itemTable;
-    
-    
+    public static Block blockTable;
+  
     @cpw.mods.fml.common.Mod.EventHandler
     public void preInit(cpw.mods.fml.common.event.FMLPreInitializationEvent event)
     {
     	//item/block init and registering
         // Config handling 
-    	itemTable = new ItemTable().setUnlocalizedName("ItemTable").setTextureName("submarine:itemtable"); //item.itemTable
-    	GameRegistry.registerItem(itemTable, itemTable.getUnlocalizedName().substring(5)); //gets rid of the item.
+    	
+    	itemTable = new ItemTable().setUnlocalizedName("ItemTable").setTextureName("submarine:itemtable");
+    	blockTable = new BlockTable(Material.cloth).setBlockName("BlockTable").setBlockTextureName("submarine:tableblock");
+    	
+    	
+    	
+    	
+    	
+    	GameRegistry.registerItem(itemTable, itemTable.getUnlocalizedName().substring(5)); //.substrink(5) removes the first 5 characters.
+    	GameRegistry.registerBlock(blockTable, blockTable.getUnlocalizedName().substring(5));
     }
+    
        
     @cpw.mods.fml.common.Mod.EventHandler
     public void load(cpw.mods.fml.common.event.FMLInitializationEvent event)

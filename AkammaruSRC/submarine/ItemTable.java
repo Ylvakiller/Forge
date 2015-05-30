@@ -8,4 +8,7 @@ public class ItemTable extends Item {
 		
 	}
 
+	public void test(){
+		
+	}
 }
