@@ -24,7 +24,7 @@ public class submarine {
     {
     	//item/block init and registering
         // Config handling 
-    	itemTable = new ItemTable().setUnlocalizedName("ItemTable"); //item.itemTable
+    	itemTable = new ItemTable().setUnlocalizedName("ItemTable").setTextureName("submarine:itemtable"); //item.itemTable
     	GameRegistry.registerItem(itemTable, itemTable.getUnlocalizedName().substring(5)); //gets rid of the item.
     }
        
