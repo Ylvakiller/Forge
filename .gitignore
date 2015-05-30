@@ -63,3 +63,4 @@ forge-1.7.10-10.13.3.1395-1710ls-changelog.txt
 gradlew.bat
 /*.classpath
 gradlew
+*.class
