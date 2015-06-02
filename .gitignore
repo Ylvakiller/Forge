@@ -64,3 +64,4 @@ gradlew.bat
 /*.classpath
 gradlew
 *.class
+bin/

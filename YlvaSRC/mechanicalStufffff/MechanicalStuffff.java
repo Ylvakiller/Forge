@@ -14,7 +14,7 @@ public class MechanicalStuffff {
     //Set the "Name" of the mod.
     public static final String MODNAME = "Mechanical Stufffs";
     //Set the version of the mod.
-    public static final String MODVER = "42";
+    public static final String MODVER = "0.01";
 
     @Instance(value = MechanicalStuffff.MODID) //Tell Forge what instance to use.
     public static MechanicalStuffff instance;
