@@ -12,14 +12,14 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import blocks.*;
 
-@Mod(modid=MechanicalStuffff.MODID, name=MechanicalStuffff.MODNAME, version=MechanicalStuffff.MODVER) //Tell forge "Oh hey, there's a new mod here to load."
+@Mod(modid=MechanicalStuffff.MODID, name=MechanicalStuffff.MODNAME, version=MechanicalStuffff.MODVERSION) //Tell forge "Oh hey, there's a new mod here to load."
 public class MechanicalStuffff {
 	//Set the ID of the mod (Should be lower case).
     public static final String MODID = "MechanicalSuit";
     //Set the "Name" of the mod.
     public static final String MODNAME = "MechanicalSuit";
     //Set the version of the mod.
-    public static final String MODVER = "0.01";
+    public static final String MODVERSION = "0.01";
 
     
     public static Block ArmorBench;
