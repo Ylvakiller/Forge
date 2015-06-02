@@ -12,12 +12,12 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import blocks.*;
 
-@Mod(modid=MechanicalStuffff.MODID, name=MechanicalStuffff.MODNAME, version=MechanicalStuffff.MODVERSION) //Tell forge "Oh hey, there's a new mod here to load."
-public class MechanicalStuffff {
+@Mod(modid=MechanicalSuit.MODID, name=MechanicalSuit.MODNAME, version=MechanicalSuit.MODVERSION) //Tell forge "Oh hey, there's a new mod here to load."
+public class MechanicalSuit {
 	//Set the ID of the mod (Should be lower case).
-    public static final String MODID = "MechanicalSuit";
+    public static final String MODID = "mechanicalsuit";
     //Set the "Name" of the mod.
-    public static final String MODNAME = "MechanicalSuit";
+    public static final String MODNAME = "mechanicalsuit";
     //Set the version of the mod.
     public static final String MODVERSION = "0.01";
 
@@ -25,14 +25,14 @@ public class MechanicalStuffff {
     public static Block ArmorBench;
     public static MechanicalTab mechanicalTab;
     
-    @Instance(value = MechanicalStuffff.MODID) //Tell Forge what instance to use.
-    public static MechanicalStuffff instance;
+    @Instance(value = MechanicalSuit.MODID) //Tell Forge what instance to use.
+    public static MechanicalSuit instance;
         
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
     	mechanicalTab = new MechanicalTab(CreativeTabs.getNextID(),"MechanicalTab");
-    	ArmorBench = new ArmorBench().setCreativeTab(mechanicalTab);
+    	ArmorBench = new ArmorBench();
         GameRegistry.registerBlock(ArmorBench, ArmorBench.getUnlocalizedName().substring(5));
         
         
